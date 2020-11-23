@@ -1,8 +1,13 @@
-﻿Public Class Form1
+﻿'Header - TJR
+'Repo, Solution, Project and File Names PascalCase - TJR
+'Only the Form Class should have Form suffix - TJR
+'Option Statements - TJR
+
+Public Class Form1 ' Bad name - TJR
     Private Sub DisplayButton_Click(sender As Object, e As EventArgs) Handles DisplayButton.Click
         If FirstNameTextBox.Text = Nothing Or LastNameTextBox.Text = Nothing Or
             StreetAddressLabel.Text = Nothing Or ZipTextBox.Text = Nothing Or
-            StateTextBox.Text = Nothing Or CityTextBox.Text = Nothing Then
+            StateTextBox.Text = Nothing Or CityTextBox.Text = Nothing Then ' ' "" works too - TJR
             MsgBox("Fill out information to continue")
             Exit Sub
         End If
@@ -19,7 +24,7 @@
     End Sub
 
     Private Sub ClearButton_Click(sender As Object, e As EventArgs) Handles ClearButton.Click
-        DisplayLabel.Text = String.Empty
+        DisplayLabel.Text = String.Empty ' "" works too - TJR
 
     End Sub
 End Class
